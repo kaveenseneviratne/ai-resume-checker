@@ -1,18 +1,19 @@
-#  AI Resume Critiquer
+#  AI Resume Analyzer (but it's Yoda)
 
 An interactive Streamlit web app that analyzes resumes using OpenAI's
 GPT models. Users can upload a PDF or TXT resume and receive structured,
-AI-generated feedback tailored to a specific job role.
+AI-generated feedback tailored to a specific job role. P.S.: The feedback 
+comes directly from the mouth of Yoda for some added fun!
 
 ------------------------------------------------------------------------
 
 ##  Features
 
--   Upload **PDF or TXT** resumes\
--   Optional job-role targeting\
--   Extracts text from resumes using **PyPDF2**\
--   Sends resume content to OpenAI for analysis\
--   Returns structured, actionable feedback\
+-   Upload **PDF or TXT** resumes
+-   Optional job-role targeting
+-   Extracts text from resumes using **PyPDF2**
+-   Sends resume content to OpenAI for analysis
+-   Returns structured, actionable feedback
 -   Simple and clean Streamlit interface
 
 ------------------------------------------------------------------------
@@ -23,7 +24,6 @@ AI-generated feedback tailored to a specific job role.
 -   **Streamlit**
 -   **OpenAI API** (gpt-4o-mini model)
 -   **PyPDF2**
--   **python-dotenv**
 
 ------------------------------------------------------------------------
 
@@ -78,15 +78,15 @@ streamlit run main.py
 
 ##  How It Works
 
-1.  User uploads a resume (PDF or TXT).\
-2.  App extracts text via PyPDF2 or UTF-8 decoding.\
-3.  User optionally enters a target job role.\
-4.  The app sends a structured prompt to OpenAI.\
+1.  User uploads a resume (PDF or TXT).
+2.  App extracts text via PyPDF2 or UTF-8 decoding.
+3.  User optionally enters a target job role.
+4.  The app sends a structured prompt to OpenAI.
 5.  OpenAI returns a detailed critique including:
-    -   Content clarity\
-    -   Skill presentation\
-    -   Experience quality\
-    -   Suggestions for improvements\
+    -   Content clarity
+    -   Skill presentation
+    -   Experience quality
+    -   Suggestions for improvements
 6.  Feedback is displayed cleanly in Streamlit.
 
 ------------------------------------------------------------------------
@@ -122,9 +122,10 @@ response = client.chat.completions.create(
 
 ##  Contributing
 
-Pull requests are welcome!\
-To contribute: 1. Fork the repository\
-2. Create a feature branch\
+Pull requests are welcome!
+To contribute: 
+1. Fork the repository
+2. Create a feature branch
 3. Submit a pull request
 
 ------------------------------------------------------------------------

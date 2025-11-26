@@ -9,8 +9,8 @@ load_dotenv()
 
 st.set_page_config(page_title="AI Resume Critiquer", page_icon="📃", layout="centered")
 
-st.title("AI Resume Critiquer")
-st.markdown("Upload your resume and get AI-powered feedback tailored to your needs!")
+st.title("AI Resume Analyzer (but it's Yoda)")
+st.markdown("Upload your resume and get Yoda's feedback tailored to your needs!")
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -39,7 +39,7 @@ if analyze and uploaded_file:
             st.error("File does not have any contnet...")
             st.stop()
         
-        prompt = f"""Please analyze this resume and provide constructive feedback. 
+        prompt = f"""Please analyze this resume and provide constructive feedback. I want you to sound like Yoda. 
         Focus on the following aspects:
         1. Content clarity and impact
         2. Skills presentation
